@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment4</string>
+
+    <string name="dt_label">Date &amp; Time</string>
+
+    <string name="btn_show">show</string>
+    <string name="btn_reset">Reset</string>
+
+
+</resources>

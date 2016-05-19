@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+
+    <string name="fname">First Name:</string>
+    <string name="lname">Last Name:</string>
+    <string name="dob">Birthday:</string>
+    <string name="add">Address:</string>
+    <string name="email">Email:</string>
+    <string name="phone">Phone:</string>
+    <string name="btn_submit">Submit</string>
+    <string name="dt_comment">Data and Time</string>
+
+</resources>
