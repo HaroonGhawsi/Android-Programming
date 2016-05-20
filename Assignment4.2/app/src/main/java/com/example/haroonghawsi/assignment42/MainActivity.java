@@ -7,14 +7,26 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
+
+
+
+
+
 public class MainActivity extends AppCompatActivity {
+
+    int commentCount = 0;
+    String userNameInput;
+    String userCommentInput;
+    String commentDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int commentCount = 0;
+
+
+        public void addComment(String name, String cMessage);
         Button _submit = (Button) findViewById(R.id.btn_submit);
         _submit.setOnClickListener(__submit);
     }
@@ -27,16 +39,35 @@ public class MainActivity extends AppCompatActivity {
 
             Button __submit = (Button) v;
 
-            if(userName.getText().toString().length() == 0){
+            //User input validation start here..
+
+            int uLen = userName.getText().toString().length();
+            int cLen = userComment.getText().toString().length();
+
+            if(uLen == 0){
 
                 userName.setError("User Name is required!");
             }
-            else if(userComment.getText().toString().length() == 0){
+            else if(cLen == 0){
 
                 userComment.setError("Comment is required!");
             }
+            //User Input Validation ended here..
+            else{
+
+                //implement adding comment to the page.
+
+                userNameInput = userName.getText().toString();
+                userCommentInput = userComment.getText().toString();
+
+                
+
+
+            }
+
         }
     };
+
 }
 
 
