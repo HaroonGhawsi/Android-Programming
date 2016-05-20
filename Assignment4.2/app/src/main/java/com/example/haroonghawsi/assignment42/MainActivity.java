@@ -5,28 +5,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
+import org.w3c.dom.Text;
 
-
-
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    int commentCount = 0;
+    int userEntryCount = 0;
     String userNameInput;
     String userCommentInput;
     String commentDate;
+    String allEntries="";
+
+    SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yy HH:mm");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-        public void addComment(String name, String cMessage);
         Button _submit = (Button) findViewById(R.id.btn_submit);
         _submit.setOnClickListener(__submit);
     }
@@ -36,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
             EditText userName = (EditText) findViewById(R.id.eName);
             EditText userComment = (EditText) findViewById(R.id.eComment);
-
             Button __submit = (Button) v;
 
             //User input validation start here..
@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
 
                 //implement adding comment to the page.
 
-                userNameInput = userName.getText().toString();
-                userCommentInput = userComment.getText().toString();
+                allEntries += ++userEntryCount + ". " + sdf.format(new Date()) + " " + userName.getText().toString() + " " + userComment.getText().toString() + "\n";
 
-                
+                EditText allEntriesText = (EditText) findViewById(R.id.AllEntriesView);
+                allEntriesText.setText(allEntries);
 
 
             }

@@ -8,4 +8,7 @@
     <string name="eComment"></string>
     <string name="btn_submit">Submit</string>
 
+    <string name="AllEntriesView"></string>
+
+
 </resources>

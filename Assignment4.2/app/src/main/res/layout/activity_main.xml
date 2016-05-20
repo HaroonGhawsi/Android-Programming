@@ -69,4 +69,19 @@
         android:layout_alignEnd="@+id/eComment"
         android:layout_marginTop="21dp" />
 
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AllEntriesView"
+        android:id="@+id/AllEntriesView"
+        android:layout_below="@+id/btn_submit"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="true"
+        android:scrollbarStyle="insideInset"
+        />
+
+
 </RelativeLayout>
