@@ -55,14 +55,12 @@ public class MainActivity extends AppCompatActivity {
             //User Input Validation ended here..
             else{
 
-                //implement adding comment to the page.
+                //implement adding Comment#, Date, Name, Comment to the page.
 
                 allEntries += ++userEntryCount + ". " + sdf.format(new Date()) + " " + userName.getText().toString() + " " + userComment.getText().toString() + "\n";
 
                 EditText allEntriesText = (EditText) findViewById(R.id.AllEntriesView);
                 allEntriesText.setText(allEntries);
-
-
             }
 
         }
