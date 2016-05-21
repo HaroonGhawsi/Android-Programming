@@ -5,8 +5,13 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
+<<<<<<< HEAD
         applicationId "com.example.haroonghawsi.assignment5"
         minSdkVersion 23
+=======
+        applicationId "com.example.haroon.assignment5"
+        minSdkVersion 8
+>>>>>>> 27d0aefd3a4d08a5b77d39b8854c3cd06753e773
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -22,5 +27,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+<<<<<<< HEAD
     compile 'com.android.support:appcompat-v7:23.4.0'
+=======
+    compile 'com.android.support:appcompat-v7:23.3.0'
+>>>>>>> 27d0aefd3a4d08a5b77d39b8854c3cd06753e773
 }
