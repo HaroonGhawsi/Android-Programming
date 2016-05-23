@@ -13,4 +13,10 @@
     <string name="edit_phone"></string>
 
     <string name="btn_submit">Submit</string>
+
+    <string name="search_name">Search by Name:</string>
+    <string name="edit_nameSearch"></string>
+    <string name="search_phone">Search by phone:</string>
+
+    <string name="edit_phoneSearch"></string>
 </resources>
