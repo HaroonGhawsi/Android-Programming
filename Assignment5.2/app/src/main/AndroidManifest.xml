@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.haroon.assignment5">
+    package="com.example.haroonghawsi.assignment52">
 
     <application
         android:allowBackup="true"
