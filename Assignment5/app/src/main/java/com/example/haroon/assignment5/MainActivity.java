@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout.LayoutParams lParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
 
-        /*
-        viewLayoutParams.leftMargin=40;
-        viewLayoutParams.rightMargin=40;
-        viewLayoutParams.topMargin=10;
-        viewLayoutParams.bottomMargin=10;
-        */
+
+        lParams.leftMargin=40;
+        lParams.rightMargin=40;
+        lParams.topMargin=10;
+        lParams.bottomMargin=10;
+
 
 
         LinearLayout layout = new LinearLayout(this);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         });
         layout.addView(b2);
 
-        LinearLayout.LayoutParams layoutp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams layoutp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         this.addContentView(layout, layoutp);
     };
 
