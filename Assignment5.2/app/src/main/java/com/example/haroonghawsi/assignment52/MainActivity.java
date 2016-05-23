@@ -35,18 +35,13 @@ public class MainActivity extends AppCompatActivity {
          edit_uMale = (RadioButton) findViewById(R.id.user_male);
          edit_uFemale = (RadioButton) findViewById(R.id.user_female);
          edit_uPhone = (EditText) findViewById(R.id.edit_phone);
-         //edit_searchName = (EditText) findViewById(R.id.edit_nameSearch);
-         //edit_searchPhone = (EditText) findViewById(R.id.edit_phoneSearch);
+
 
         Button btnSub = (Button) findViewById(R.id.btn_submit);
-
-
 
         btnSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
 
                 namePInfo = edit_uName.getText().toString() + " " + edit_uHobbies.getText().toString() + " " + edit_uMale.getText().toString() +
                         " " + edit_uFemale.getText().toString() + " " + edit_uPhone.getText().toString() ;
@@ -54,12 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 phonePInfo = edit_uPhone.getText().toString() + " " + edit_uName.getText().toString() + " " + edit_uHobbies.getText().toString() + " " + edit_uMale.getText().toString() +
                         " " + edit_uFemale.getText().toString() ;
 
-
-                //EditText textView = (EditText) findViewById(R.id.edit_nameSearch);
-                //textView.setText(namePInfo);
                 nameVector.add(namePInfo);
-
-
                 //Here we define an array adapter with a style and a content list
                 ArrayAdapter<String> nameArrayAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_dropdown_item_1line,nameVector );
 
@@ -80,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
                 //Here we define the AutoCompleteTextView object
                 AutoCompleteTextView phoneAutoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.edit_phoneSearch);
-
 
                 //Here we define the required number of letters to be typed in the AutoCompleteTextView
                 phoneAutoCompleteTextView.setThreshold(1);
