@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment6.3</string>
+
+    <string name="btn_enterKey">Enter</string>
+    <string name="edit_url">Enter URL here</string>
+    <string name="action_settings">Settings</string>
+</resources>
