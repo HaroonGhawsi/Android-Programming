@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Assignment7.1</string>
+
+    <string name="event_name">Event Name: </string>
+    <string name="edit_eventName"></string>
+    <string name="event_place">Event Place: </string>
+
+    <string name="placesArray">Select Event Place </string>
+
+    <string-array name="placesArray">
+        <item>Kiel</item>
+        <item>Hamburg</item>
+        <item>Frankfurt</item>
+        <item>Munich</item>
+        <item>Stutgart</item>
+        <item>Berlin</item>
+    </string-array>
+
+
+    <string name="pick_date">Event Date: </string>
+    <string name="pick_time">Event Time: </string>
+    <string name="event_Submit">Submit Event</string>
+    <string name="show_data">Show Event Data</string>
+    <string name="edit_dateView"></string>
+    <string name="edit_timeView"></string>
+
+</resources>
